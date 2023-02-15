@@ -1,0 +1,8 @@
+﻿using System.Threading.Tasks;
+
+namespace Nintex.OIDC.STS.Services;
+
+public interface IEmailSender
+{
+    Task SendEmail(string email, string subject, string message, string toUsername);
+}
